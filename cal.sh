@@ -6,7 +6,7 @@ read n1 < num1.txt
 read n2 < num2.txt
 
 declare -a num
-num=(n1 n2)
+num=($n1 $n2)
 
 if [ -n "$op" ]; then
 	case $op in
