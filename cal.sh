@@ -1,5 +1,7 @@
 #!bin/bash
 
+echo "project management in github"
+
 op=$1
 
 read n1 < num1.txt
