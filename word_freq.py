@@ -3,6 +3,8 @@ import sys
 
 file = open(sys.argv[1], 'r')
 
+num=(sys.argv[2])
+print(num)
 lines = file.readlines()
 Dic = {}
 for line in lines:
