@@ -22,5 +22,5 @@ Dic = sorted(Dic.items(), key=lambda x: x[1], reverse=True)
 
 for n in range(0, num):
     word=Dic[n][0]
-    cnt=Doc[n][1]
-    print("%-5s%5d" %word %cnt)
+    cnt=Dic[n][1]
+    print("%-5s%5d" %(word, cnt))
