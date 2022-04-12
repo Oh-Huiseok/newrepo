@@ -13,6 +13,8 @@ for line in lines:
     line = line.strip()
     words = line.split()
     for word in words:
+        if (word.isalpha()):
+            word.strip(',!@#$%^&*()_+"";`\|[{]}.>/?,<:')
         if (word in Dic):
             Dic[word] = Dic.pop(word) + 1
         else:
