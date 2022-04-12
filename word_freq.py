@@ -9,12 +9,13 @@ lines = file.readlines()
 
 Dic = {}
 
+specialChar = '!@#$%^&*()_{}[]\|;:''"<>?/'
+
 for line in lines:
     line = line.strip()
     words = line.split()
     for word in words:
-        if (word.isalpha()):
-            word.strip(',!@#$%^&*()_+"";`\|[{]}.>/?,<:')
+        word = ''.join(c for c in word if c not in specialChar)
         if (word in Dic):
             Dic[word] = Dic.pop(word) + 1
         else:
